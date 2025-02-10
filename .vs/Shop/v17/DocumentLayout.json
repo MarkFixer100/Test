@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\infostructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|solutionrelative:infostructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\domain\\entities\\perfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\perfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\domain\\ireposotory\\ireposotoryperfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|solutionrelative:domain\\ireposotory\\ireposotoryperfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\application\\dto\\perfumedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|solutionrelative:application\\dto\\perfumedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\infostructure\\migrations\\20250209180415_newmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|solutionrelative:infostructure\\migrations\\20250209180415_newmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 385,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "Infostructure\\Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\Repository.cs",
+              "RelativeToolTip": "Infostructure\\Repository\\Repository.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T14:52:37.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Perfume.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Perfume.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Perfume.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Perfume.cs",
+              "RelativeToolTip": "Domain\\Entities\\Perfume.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-30T05:41:19.624Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IReposotoryPerfume.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\IReposotoryPerfume.cs",
+              "RelativeDocumentMoniker": "Domain\\IReposotory\\IReposotoryPerfume.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\IReposotoryPerfume.cs",
+              "RelativeToolTip": "Domain\\IReposotory\\IReposotoryPerfume.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-04T18:42:47.132Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PerfumeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Dto\\PerfumeDTO.cs",
+              "RelativeDocumentMoniker": "Application\\Dto\\PerfumeDTO.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Dto\\PerfumeDTO.cs",
+              "RelativeToolTip": "Application\\Dto\\PerfumeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-07T05:18:17.801Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 15,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250209180415_NewMigration.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Migrations\\20250209180415_NewMigration.cs",
+              "RelativeDocumentMoniker": "Infostructure\\Migrations\\20250209180415_NewMigration.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Migrations\\20250209180415_NewMigration.cs",
+              "RelativeToolTip": "Infostructure\\Migrations\\20250209180415_NewMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T18:04:15.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

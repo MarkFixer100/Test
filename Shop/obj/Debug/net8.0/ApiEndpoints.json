@@ -1,0 +1,22 @@
+[
+  {
+    "ContainingType": "Shop.Controllers.PerfumAPI",
+    "Method": "GetPerfumes",
+    "RelativePath": "api/PerfumeAPI",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Application.Dto.PerfumeDTO, Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
