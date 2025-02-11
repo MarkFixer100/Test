@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Application.Dto
 {
-    internal class CreatePerfumeDTO
+    public class CreatePerfumeDTO
     {
         [Required]
         [MaxLength(30)]

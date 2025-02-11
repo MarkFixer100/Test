@@ -18,17 +18,25 @@ namespace Infostructure.Repository
         {
             _db = db;
         }
-        public Task Create(Perfume entity)
+     
+
+        public async Task<Perfume> GetAsync(Expression<Func<Perfume, bool>> filter = null, bool tracked = true)
         {
-            throw new NotImplementedException();
+            IQueryable<Perfume> query = _db.Perfumes;
+
+            if (!tracked)
+            {
+                query = query.AsNoTracking();
+            }
+            if (filter != null)
+            {
+                query = query.Where(filter);    
+            }
+
+            return await query.FirstOrDefaultAsync(); 
         }
 
-        public Task<Perfume> Get(Expression<Func<Perfume, bool>> filter = null, bool tracked = true)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<List<Perfume>> GetAll(Expression<Func<Perfume, bool>> filter = null)
+        public async Task<List<Perfume>> GetAllAsync(Expression<Func<Perfume, bool>> filter = null)
         {
             IQueryable<Perfume> query = _db.Perfumes;
 
@@ -39,19 +47,25 @@ namespace Infostructure.Repository
             return await query.ToListAsync();
         }
 
-        public Task Remove(Perfume entity)
+        public async Task CreateAsync(Perfume entity)
         {
-            throw new NotImplementedException();
+            await _db.Perfumes.AddAsync(entity);
+
+            await SaveAsync();
         }
 
-        public Task Save()
+        public async Task Remove(Perfume entity)
         {
-            throw new NotImplementedException();
+             _db.Perfumes.Remove(entity);
+
+            await SaveAsync();
         }
 
-        public Task Update(Perfume entity)
+        public async Task SaveAsync()
         {
-            throw new NotImplementedException();
+            await _db.SaveChangesAsync();
         }
+
+ 
     }
 }

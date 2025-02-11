@@ -15,6 +15,12 @@ namespace Application
 
             CreateMap<Perfume, PerfumeDTO>();
             CreateMap<PerfumeDTO, Perfume>();
+
+            CreateMap<Perfume, CreatePerfumeDTO>().ReverseMap();
+
+            CreateMap<Perfume , UpdatePerfumeDTO>().ReverseMap();
+            
+            
         }
     }
 }

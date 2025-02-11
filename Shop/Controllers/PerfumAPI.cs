@@ -18,9 +18,10 @@ namespace Shop.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<PerfumeDTO>>> GetPerfumes()
+        public async Task<ActionResult<IEnumerable<PerfumeDTO>>> GetPerfumesAsync()
         {
-            IEnumerable<PerfumeDTO> perfumeList = await _perfumeCase.GetAllPerfumes();
+            IEnumerable<PerfumeDTO> perfumeList = await _perfumeCase.GetAllPerfumesAsync();
+
             return Ok(perfumeList);
         }
 

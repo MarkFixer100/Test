@@ -10,15 +10,10 @@ namespace Domain.IReposotory
 {
     public interface IReposotoryPerfume
     {
-        Task<List<Perfume>> GetAll(Expression<Func<Perfume , bool>> filter = null);
-
-        Task<Perfume> Get(Expression<Func<Perfume , bool>> filter = null , bool tracked = true );
-        Task Create(Perfume entity);
-
+        Task<List<Perfume>> GetAllAsync(Expression<Func<Perfume , bool>> filter = null);
+        Task<Perfume> GetAsync(Expression<Func<Perfume , bool>> filter = null , bool tracked = true );
+        Task CreateAsync(Perfume entity);
         Task Remove(Perfume entity);
-
-        Task Update(Perfume entity);
-
-        Task Save();
+        Task SaveAsync();
     }
 }
