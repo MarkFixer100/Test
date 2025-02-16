@@ -25,5 +25,41 @@ namespace Shop.Controllers
             return Ok(perfumeList);
         }
 
+        [HttpGet("{id:int}", Name = "GetPerfume")]
+
+        public async Task<ActionResult<PerfumeDTO>> GetPerfumeAsync(int id)
+        {
+            if (id == 0) { 
+                return BadRequest();
+            }
+
+            var perfume = await _perfumeCase.GetAsync(id);
+            
+            return Ok(perfume);
+        }
+
+        [HttpPost]
+
+        public async Task CreatePerfume([FromBody] CreatePerfumeDTO createPerfume)
+        {
+           await _perfumeCase.AddAsync(createPerfume);
+        }
+
+        [HttpDelete("{id:int}", Name = "DeletePerfume")]
+
+        public async Task<IActionResult> DeletePerfume(int id)
+        {
+            if (id == 0) {
+            
+                return BadRequest();
+            }
+
+           await _perfumeCase.Delete(id);
+
+            return NoContent();
+
+        }
+
+
     }
 }

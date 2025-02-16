@@ -66,6 +66,12 @@ namespace Infostructure.Repository
             await _db.SaveChangesAsync();
         }
 
- 
+        public async Task UpdateAsync(Perfume entity)
+        {
+              
+            _db.Update(entity);
+
+              await SaveAsync();
+        }
     }
 }

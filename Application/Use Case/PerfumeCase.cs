@@ -56,6 +56,23 @@ namespace Application.Use_Case
             return _mapper.Map<PerfumeDTO>(perfume);
         }
 
+        public async Task Delete(int id)
+        {
+            var Perfume = await _perfumeRepository.GetAsync(p => p.Id == id);
+
+           await _perfumeRepository.Remove(Perfume);
+
+            await _perfumeRepository.SaveAsync();
+        }
+
+        public async Task UpdateAsync(int id , UpdatePerfumeDTO updateDTO)
+        {
+
+            Perfume model = _mapper.Map<Perfume>(updateDTO);
+
+            await _perfumeRepository.UpdateAsync(model);
+        }
+
     }
 
 

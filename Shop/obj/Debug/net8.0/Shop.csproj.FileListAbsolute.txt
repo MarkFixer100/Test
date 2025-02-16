@@ -176,3 +176,4 @@ C:\Users\диловар\Desktop\Shop\Shop\bin\Debug\net8.0\ru\Microsoft.CodeAnal
 C:\Users\диловар\Desktop\Shop\Shop\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\диловар\Desktop\Shop\Shop\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
 C:\Users\диловар\Desktop\Shop\Shop\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+C:\Users\диловар\Desktop\Shop\Shop\obj\Debug\net8.0\Shop.sourcelink.json

@@ -14,17 +14,17 @@ namespace Domain.Entities
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
-        public string Name { get; set; }
-        public string Brand { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Brand { get; set; } = string.Empty ;
 
         [Column(TypeName = "decimal(18,2)")]
-        public decimal Price { get; set; }
+        public decimal Price { get; set; } = decimal.Zero;
 
-        public int VolumeInMl { get; set; }
-        public string FragranceFamily { get; set; }
-        public string Description { get; set; }
+        public int VolumeInMl { get; set; } = 0;
+        public string FragranceFamily { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
         public DateTime ReleaseDate { get; set; }
-        public bool IsUnisex { get; set; }
+        public bool IsUnisex { get; set; } 
         public bool IsNew { get; set; }
     }
 }

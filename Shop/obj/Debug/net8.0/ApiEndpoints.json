@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "Shop.Controllers.PerfumAPI",
-    "Method": "GetPerfumes",
+    "Method": "GetPerfumesAsync",
     "RelativePath": "api/PerfumeAPI",
     "HttpMethod": "GET",
     "IsController": true,
@@ -18,5 +18,54 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Shop.Controllers.PerfumAPI",
+    "Method": "CreatePerfume",
+    "RelativePath": "api/PerfumeAPI",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createPerfume",
+        "Type": "Application.Dto.CreatePerfumeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Shop.Controllers.PerfumAPI",
+    "Method": "GetPerfumeAsync",
+    "RelativePath": "api/PerfumeAPI/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Application.Dto.PerfumeDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetPerfume"
   }
 ]
