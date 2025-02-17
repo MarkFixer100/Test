@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\shop\\controllers\\perfumapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\perfumapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\domain\\ireposotory\\ireposotoryperfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|solutionrelative:domain\\ireposotory\\ireposotoryperfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\infostructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|solutionrelative:infostructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\application\\use case\\perfumecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,20 +19,16 @@
       "RelativeMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|solutionrelative:application\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\infostructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|solutionrelative:infostructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\domain\\ireposotory\\ireposotoryperfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|solutionrelative:domain\\ireposotory\\ireposotoryperfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\domain\\entities\\perfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\perfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\infostructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|solutionrelative:infostructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\domain\\entities\\perfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\perfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\shop\\controllers\\perfumapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\perfumapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 305,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,20 +46,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Application\\MappingProfile.cs",
               "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\MappingProfile.cs",
               "RelativeToolTip": "Application\\MappingProfile.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-16T13:26:32.67Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Perfume.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Perfume.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Perfume.cs",
@@ -78,59 +78,59 @@
               "RelativeDocumentMoniker": "Infostructure\\Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Infostructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T17:58:27.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "PerfumAPI.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Controllers\\PerfumAPI.cs",
               "RelativeDocumentMoniker": "Shop\\Controllers\\PerfumAPI.cs",
               "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Controllers\\PerfumAPI.cs",
               "RelativeToolTip": "Shop\\Controllers\\PerfumAPI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T16:22:36.937Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PerfumeCase.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\PerfumeCase.cs",
               "RelativeDocumentMoniker": "Application\\Use Case\\PerfumeCase.cs",
               "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\PerfumeCase.cs",
               "RelativeToolTip": "Application\\Use Case\\PerfumeCase.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAowEoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-11T16:00:34.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\Repository.cs",
               "RelativeDocumentMoniker": "Infostructure\\Repository\\Repository.cs",
               "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\Repository.cs",
               "RelativeToolTip": "Infostructure\\Repository\\Repository.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwEUAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowEUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-10T14:52:37.405Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "IReposotoryPerfume.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\IReposotoryPerfume.cs",
               "RelativeDocumentMoniker": "Domain\\IReposotory\\IReposotoryPerfume.cs",
               "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\IReposotoryPerfume.cs",
               "RelativeToolTip": "Domain\\IReposotory\\IReposotoryPerfume.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-04T18:42:47.132Z",
               "EditorCaption": ""

@@ -60,6 +60,19 @@ namespace Shop.Controllers
 
         }
 
+        [HttpPut("{id:int}", Name = "Update")]
+
+        public async Task<IActionResult> UpdatePerfumeAsync(int id , UpdatePerfumeDTO Updateperfume)
+        {
+            if (Updateperfume == null || id != Updateperfume.Id ) {
+                return BadRequest(Updateperfume);
+            }
+
+            await _perfumeCase.UpdateAsync(id, Updateperfume);
+
+            return NoContent();
+        }    
+
 
     }
 }

@@ -67,5 +67,44 @@
       }
     ],
     "EndpointName": "GetPerfume"
+  },
+  {
+    "ContainingType": "Shop.Controllers.PerfumAPI",
+    "Method": "DeletePerfume",
+    "RelativePath": "api/PerfumeAPI/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "DeletePerfume"
+  },
+  {
+    "ContainingType": "Shop.Controllers.PerfumAPI",
+    "Method": "UpdatePerfumeAsync",
+    "RelativePath": "api/PerfumeAPI/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Updateperfume",
+        "Type": "Application.Dto.UpdatePerfumeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Update"
   }
 ]
