@@ -8,13 +8,10 @@ using System.Threading.Tasks;
 
 namespace Domain.IReposotory
 {
-    public interface IReposotoryPerfume
+    public interface IReposotoryPerfume:IRepository<Perfume>
     {
-        Task<List<Perfume>> GetAllAsync(Expression<Func<Perfume , bool>> filter = null);
-        Task<Perfume> GetAsync(Expression<Func<Perfume , bool>> filter = null , bool tracked = true );
-        Task CreateAsync(Perfume entity);
-        Task UpdateAsync(Perfume entity);
-        Task Remove(Perfume entity);
-        Task SaveAsync();
+
+        Task<Perfume> UpdateAsync(Perfume entity);
+
     }
 }

@@ -11,18 +11,22 @@ using System.Threading.Tasks;
 
 namespace Infostructure.Repository
 {
-    public class Repository : IReposotoryPerfume
+    public class Repository<T>:IRepository<T> where T : class
     {
+
         private readonly ApplicationDbContext _db;
+
+        internal DbSet<T> dbSet;
         public Repository(ApplicationDbContext db)
         {
             _db = db;
+            this.dbSet = _db.Set<T>();
         }
-     
 
-        public async Task<Perfume> GetAsync(Expression<Func<Perfume, bool>> filter = null, bool tracked = true)
+
+        public async Task<T> GetAsync(Expression<Func<T, bool>>? filter = null, bool tracked = true)
         {
-            IQueryable<Perfume> query = _db.Perfumes;
+            IQueryable<T> query = dbSet;
 
             if (!tracked)
             {
@@ -30,15 +34,15 @@ namespace Infostructure.Repository
             }
             if (filter != null)
             {
-                query = query.Where(filter);    
+                query = query.Where(filter);
             }
 
-            return await query.FirstOrDefaultAsync(); 
+            return await query.FirstOrDefaultAsync();
         }
 
-        public async Task<List<Perfume>> GetAllAsync(Expression<Func<Perfume, bool>> filter = null)
+        public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>>? filter = null)
         {
-            IQueryable<Perfume> query = _db.Perfumes;
+            IQueryable<T> query = dbSet;
 
             if (filter != null)
             {
@@ -47,16 +51,16 @@ namespace Infostructure.Repository
             return await query.ToListAsync();
         }
 
-        public async Task CreateAsync(Perfume entity)
+        public async Task CreateAsync(T entity)
         {
-            await _db.Perfumes.AddAsync(entity);
+            await dbSet.AddAsync(entity);
 
             await SaveAsync();
         }
 
-        public async Task Remove(Perfume entity)
+        public async Task Remove(T entity)
         {
-             _db.Perfumes.Remove(entity);
+            dbSet.Remove(entity);
 
             await SaveAsync();
         }
@@ -66,12 +70,6 @@ namespace Infostructure.Repository
             await _db.SaveChangesAsync();
         }
 
-        public async Task UpdateAsync(Perfume entity)
-        {
-              
-            _db.Update(entity);
 
-              await SaveAsync();
-        }
     }
 }
