@@ -4,6 +4,7 @@ using Domain.IReposotory;
 using Infostructure;
 using Infostructure.Data;
 using Infostructure.PerfumeRepository;
+using Infostructure.Repository;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -14,6 +15,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<IReposotoryPerfume , PerfumeRepository>();
 builder.Services.AddScoped<PerfumeCase>();
+builder.Services.AddScoped<IStudentRepository , StudentRepository>();
+builder.Services.AddScoped<StudentCase>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultSqlConection") , b => b.MigrationsAssembly("Infostructure"));

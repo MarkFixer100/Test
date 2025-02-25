@@ -64,7 +64,6 @@ namespace Application.Use_Case
 
             await _perfumeRepository.SaveAsync();
         }
-
         public async Task UpdateAsync(int id , UpdatePerfumeDTO updateDTO)
         {
 
@@ -72,6 +71,7 @@ namespace Application.Use_Case
 
             await _perfumeRepository.UpdateAsync(model);
         }
+
 
     }
 

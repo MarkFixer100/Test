@@ -3,48 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\infostructure\\repository\\perfumerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|solutionrelative:infostructure\\repository\\perfumerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\shop\\controllers\\studentapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\studentapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\infostructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|solutionrelative:infostructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\application\\use case\\studentcase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|solutionrelative:application\\use case\\studentcase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\domain\\ireposotory\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|solutionrelative:domain\\ireposotory\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\infostructure\\data\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|solutionrelative:infostructure\\data\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\domain\\ireposotory\\ireposotoryperfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|solutionrelative:domain\\ireposotory\\ireposotoryperfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\application\\studentdtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|solutionrelative:application\\studentdtos\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\domain\\entities\\perfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\perfume.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\application\\studentdtos\\updatestudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|solutionrelative:application\\studentdtos\\updatestudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\application\\use case\\perfumecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|solutionrelative:application\\use case\\perfumecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\shop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|solutionrelative:shop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\application\\studentdtos\\createstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|solutionrelative:application\\studentdtos\\createstudentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\application\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|solutionrelative:application\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\infostructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|solutionrelative:infostructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\shop\\controllers\\perfumapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\perfumapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\infostructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|solutionrelative:infostructure\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\domain\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{425D7AE3-DC58-4F31-8EF6-B3905A97A848}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\infostructure\\repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|solutionrelative:infostructure\\repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\infostructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40CF501B-1DCB-4A23-9DE8-75556881370C}|Infostructure\\Infostructure.csproj|solutionrelative:infostructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\application\\use case\\perfumecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|solutionrelative:application\\use case\\perfumecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\application\\dto\\perfumedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|solutionrelative:application\\dto\\perfumedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,8 +65,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 305,
-          "SelectedChildIndex": 5,
+          "DockedHeight": 203,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,139 +79,180 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Repository.cs",
-              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\Repository.cs",
-              "RelativeDocumentMoniker": "Infostructure\\Repository\\Repository.cs",
-              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\Repository.cs*",
-              "RelativeToolTip": "Infostructure\\Repository\\Repository.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwBoAAABAAAAAAAAAAA==",
+              "Title": "StudentCase.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\StudentCase.cs",
+              "RelativeDocumentMoniker": "Application\\Use Case\\StudentCase.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\StudentCase.cs",
+              "RelativeToolTip": "Application\\Use Case\\StudentCase.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAIwFAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T07:09:57.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\IRepository.cs",
-              "RelativeDocumentMoniker": "Domain\\IReposotory\\IRepository.cs",
-              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\IRepository.cs*",
-              "RelativeToolTip": "Domain\\IReposotory\\IRepository.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAwAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T06:40:16.077Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Perfume.cs",
-              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Perfume.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Perfume.cs",
-              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Perfume.cs",
-              "RelativeToolTip": "Domain\\Entities\\Perfume.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA9wAsAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T09:08:31.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PerfumeRepository.cs",
-              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\PerfumeRepository.cs",
-              "RelativeDocumentMoniker": "Infostructure\\Repository\\PerfumeRepository.cs",
-              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\PerfumeRepository.cs*",
-              "RelativeToolTip": "Infostructure\\Repository\\PerfumeRepository.cs*",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAYwA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-10T14:52:37.405Z",
+              "WhenOpened": "2025-02-24T07:48:27.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IReposotoryPerfume.cs",
-              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\IReposotoryPerfume.cs",
-              "RelativeDocumentMoniker": "Domain\\IReposotory\\IReposotoryPerfume.cs",
-              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\IReposotoryPerfume.cs*",
-              "RelativeToolTip": "Domain\\IReposotory\\IReposotoryPerfume.cs*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Title": "StudentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\StudentDTOS\\StudentDTO.cs",
+              "RelativeDocumentMoniker": "Application\\StudentDTOS\\StudentDTO.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\StudentDTOS\\StudentDTO.cs",
+              "RelativeToolTip": "Application\\StudentDTOS\\StudentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-04T18:42:47.132Z",
+              "WhenOpened": "2025-02-25T17:33:33.181Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateStudentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\StudentDTOS\\UpdateStudentDTO.cs",
+              "RelativeDocumentMoniker": "Application\\StudentDTOS\\UpdateStudentDTO.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\StudentDTOS\\UpdateStudentDTO.cs",
+              "RelativeToolTip": "Application\\StudentDTOS\\UpdateStudentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T17:33:36.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PerfumeCase.cs",
-              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\PerfumeCase.cs",
-              "RelativeDocumentMoniker": "Application\\Use Case\\PerfumeCase.cs",
-              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\PerfumeCase.cs",
-              "RelativeToolTip": "Application\\Use Case\\PerfumeCase.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA1wEoAAAAAAAAAAAAAAA==",
+              "Title": "CreateStudentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\StudentDTOS\\CreateStudentDTO.cs",
+              "RelativeDocumentMoniker": "Application\\StudentDTOS\\CreateStudentDTO.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\StudentDTOS\\CreateStudentDTO.cs",
+              "RelativeToolTip": "Application\\StudentDTOS\\CreateStudentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T16:00:34.135Z"
+              "WhenOpened": "2025-02-25T17:33:17.6Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Student.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Student.cs",
-              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Student.cs",
-              "RelativeToolTip": "Domain\\Entities\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Config.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Data\\Config.cs",
+              "RelativeDocumentMoniker": "Infostructure\\Data\\Config.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Data\\Config.cs",
+              "RelativeToolTip": "Infostructure\\Data\\Config.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2019-12-08T03:48:16.35Z"
+              "WhenOpened": "2025-02-25T17:25:40.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentAPI.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Controllers\\StudentAPI.cs",
+              "RelativeDocumentMoniker": "Shop\\Controllers\\StudentAPI.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Controllers\\StudentAPI.cs*",
+              "RelativeToolTip": "Shop\\Controllers\\StudentAPI.cs*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAmwEYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T15:33:43.446Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Program.cs",
-              "RelativeDocumentMoniker": "Shop\\Program.cs",
-              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Program.cs",
-              "RelativeToolTip": "Shop\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T07:10:42.132Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PerfumAPI.cs",
-              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Controllers\\PerfumAPI.cs",
-              "RelativeDocumentMoniker": "Shop\\Controllers\\PerfumAPI.cs",
-              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Controllers\\PerfumAPI.cs",
-              "RelativeToolTip": "Shop\\Controllers\\PerfumAPI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T16:22:36.937Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Infostructure\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Infostructure\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T17:58:27.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\MappingProfile.cs",
               "RelativeDocumentMoniker": "Application\\MappingProfile.cs",
               "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\MappingProfile.cs",
               "RelativeToolTip": "Application\\MappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T13:26:32.67Z"
+              "WhenOpened": "2025-02-25T17:28:37.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "Infostructure\\Repository\\Repository.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\Repository.cs",
+              "RelativeToolTip": "Infostructure\\Repository\\Repository.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T18:04:24.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Student.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Student.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Student.cs",
+              "RelativeToolTip": "Domain\\Entities\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T17:29:39.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Course.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Course.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Course.cs",
+              "RelativeToolTip": "Domain\\Entities\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T17:51:19.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "Infostructure\\Repository\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\StudentRepository.cs",
+              "RelativeToolTip": "Infostructure\\Repository\\StudentRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T17:30:15.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Infostructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Infostructure\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T17:29:44.989Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PerfumeCase.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\PerfumeCase.cs",
+              "RelativeDocumentMoniker": "Application\\Use Case\\PerfumeCase.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\PerfumeCase.cs",
+              "RelativeToolTip": "Application\\Use Case\\PerfumeCase.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T16:07:07.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PerfumeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Dto\\PerfumeDTO.cs",
+              "RelativeDocumentMoniker": "Application\\Dto\\PerfumeDTO.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Dto\\PerfumeDTO.cs",
+              "RelativeToolTip": "Application\\Dto\\PerfumeDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T07:29:53.51Z"
             }
           ]
         }
