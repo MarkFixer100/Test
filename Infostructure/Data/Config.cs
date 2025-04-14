@@ -21,7 +21,7 @@ namespace Infostructure.Data
                     Created = new DateTime(2025, 2, 23),
                     Updated = new DateTime(2025, 2, 23)
                 }
-                
+
                 );
         }
     }

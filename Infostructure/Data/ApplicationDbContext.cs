@@ -15,6 +15,8 @@ namespace Infostructure.Data
 
         public DbSet<Course> Courses { get; set; }
 
+        public DbSet<User> Users { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
            modelBuilder.Entity<Course>().HasKey(c => c.Id);

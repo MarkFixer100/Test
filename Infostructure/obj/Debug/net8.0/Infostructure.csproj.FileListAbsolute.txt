@@ -16,3 +16,5 @@ C:\Users\диловар\Desktop\Shop\Infostructure\obj\Debug\net8.0\Infostructur
 C:\Users\диловар\Desktop\Shop\Infostructure\obj\Debug\net8.0\Infostructure.genruntimeconfig.cache
 C:\Users\диловар\Desktop\Shop\Infostructure\obj\Debug\net8.0\ref\Infostructure.dll
 C:\Users\диловар\Desktop\Shop\Infostructure\obj\Debug\net8.0\Infostructure.sourcelink.json
+C:\Users\диловар\Desktop\Shop\Infostructure\bin\Debug\net8.0\Application.dll
+C:\Users\диловар\Desktop\Shop\Infostructure\bin\Debug\net8.0\Application.pdb

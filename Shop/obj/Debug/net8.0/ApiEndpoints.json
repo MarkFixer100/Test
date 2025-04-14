@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "Shop.Controllers.AuthController",
+    "Method": "login",
+    "RelativePath": "api/AuthAPI/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "Application.AuthDto.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Shop.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/AuthAPI/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registreDto",
+        "Type": "Application.AuthDto.RegistreDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Shop.Controllers.PerfumAPI",
     "Method": "GetPerfumesAsync",
     "RelativePath": "api/PerfumeAPI",
