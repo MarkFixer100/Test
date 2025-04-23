@@ -6,8 +6,8 @@ namespace Domain.IReposotory
 {
     public interface IUserRepository
     {
-        Task<bool> IsUserExists(string username); // Проверка на уникальность
-        Task<User> GetUserByEmail(string username); // Для аутентификации
-        Task AddUser(User user); // Для регистрации
+        Task<bool> IsUserExists(string username); 
+        Task<User> GetUserByEmail(string username); 
+        Task AddUser(User user); 
     }
 }
