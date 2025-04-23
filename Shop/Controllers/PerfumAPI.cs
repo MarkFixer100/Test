@@ -1,11 +1,13 @@
 ﻿using Application.Dto;
 using Application.Use_Case;
 using Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Shop.Controllers
 {
-      [ApiController]
+    [Authorize]
+    [ApiController]
     [Route("api/PerfumeAPI")]
     public class PerfumAPI:ControllerBase
     {
