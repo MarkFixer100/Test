@@ -1,4 +1,5 @@
 ﻿using Application.AuthDto;
+using Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace Application.interfaces
     {
         Task<AuthResponseDto> Login(LoginDto loginDto);
         Task<AuthResponseDto> Register(RegistreDto registerDto);
+        
+        Task<AuthResponseDto> RefreshTokenAsync (RefreshTokenRequestDto request);
 
     }
 }

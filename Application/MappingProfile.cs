@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Application.CategoryDto;
+using Application.ProductDto;
 
 
 namespace Application
@@ -29,7 +31,26 @@ namespace Application
             CreateMap<Student, CreateStudentDTO>().ReverseMap();
 
             CreateMap<Student , UpdateStudentDTO>().ReverseMap();
+
+            CreateMap<Product, ProductDtos>();
+
+            CreateMap<ProductDtos, Product>();
+
             
+            CreateMap<CreateProductDto, Product>();
+
+            CreateMap<UpdateProductDto, Product>();
+
+
+
+            CreateMap<CreateCategoryDtos, Category>();
+
+            CreateMap<Category, CategoryDtos>();
+
+            CreateMap<CategoryDtos, Category>();
+
+
+
         }
     }
 }

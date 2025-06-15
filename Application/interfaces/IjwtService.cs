@@ -10,5 +10,11 @@ namespace Application.interfaces
     public interface IJwtService
     {
         string GenerateToken(User user);
+
+        string GenerateRefreshToken();
+
+        Task<string> GenerateAndSaveRefreshTokenAsync (User user);
+
+        Task <User> ValidateRefreshTokenAsync(Guid userId, string refreshToken);
     }
 }

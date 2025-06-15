@@ -1,7 +1,10 @@
 ﻿using Application.AuthDto;
 using Application.interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Newtonsoft.Json.Serialization;
 
 namespace Shop.Controllers
 {
@@ -10,14 +13,15 @@ namespace Shop.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
-        public AuthController(IAuthService authService) {
+        public AuthController(IAuthService authService)
+        {
 
             _authService = authService;
         }
 
         [HttpPost("register")]
 
-        public async Task<IActionResult> Register(RegistreDto registreDto)
+        public async Task<ActionResult> Register(RegistreDto registreDto)
         {
             var response = await _authService.Register(registreDto);
 
@@ -26,11 +30,33 @@ namespace Shop.Controllers
 
         [HttpPost("login")]
 
-    public async Task<IActionResult> login(LoginDto loginDto)
+        public async Task<ActionResult> login(LoginDto loginDto)
         {
-          var response = await  _authService.Login(loginDto);
+            var response = await _authService.Login(loginDto);
 
             return Ok(response);
         }
+
+        [HttpPost("refresh-token")]
+
+        public async Task<ActionResult<AuthResponseDto>> RefreshToken(RefreshTokenRequestDto request)
+        {
+            var result = await _authService.RefreshTokenAsync(request);
+
+            if (result == null || request.RefreshToken == null)
+            {
+                return Unauthorized("Неверный  Токен");
+            }
+
+            return Ok(result);  
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpGet("admin-only")]
+        public IActionResult adminOnly()
+        {
+            return Ok("admin");
+        }
+
     }
 }
