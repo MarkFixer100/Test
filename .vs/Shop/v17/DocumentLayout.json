@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\shop\\controllers\\studentapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA7120D9-0394-448E-92F2-58ACB548CF8E}|Shop\\Shop.csproj|solutionrelative:shop\\controllers\\studentapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|c:\\users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\desktop\\shop\\application\\use case\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F36204FF-9071-4A58-8D26-95D473DF7ECD}|Application\\Application.csproj|solutionrelative:application\\use case\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -150,7 +154,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 268,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -162,7 +166,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "StudentAPI.cs",
+              "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Controllers\\StudentAPI.cs",
+              "RelativeDocumentMoniker": "Shop\\Controllers\\StudentAPI.cs",
+              "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Controllers\\StudentAPI.cs",
+              "RelativeToolTip": "Shop\\Controllers\\StudentAPI.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T22:06:57.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CreateProductDto.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\ProductDto\\CreateProductDto.cs",
               "RelativeDocumentMoniker": "Application\\ProductDto\\CreateProductDto.cs",
@@ -170,12 +191,11 @@
               "RelativeToolTip": "Application\\ProductDto\\CreateProductDto.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T19:36:28.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T19:36:28.194Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ProductDto.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\ProductDto\\ProductDto.cs",
               "RelativeDocumentMoniker": "Application\\ProductDto\\ProductDto.cs",
@@ -183,12 +203,11 @@
               "RelativeToolTip": "Application\\ProductDto\\ProductDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T19:36:23.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T19:36:23.279Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Category.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Category.cs",
@@ -196,12 +215,11 @@
               "RelativeToolTip": "Domain\\Entities\\Category.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T19:36:06.747Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T19:36:06.747Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
@@ -209,12 +227,11 @@
               "RelativeToolTip": "Domain\\Entities\\Product.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T19:35:56.201Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T19:35:56.201Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "CategoryCase.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\CategoryCase.cs",
               "RelativeDocumentMoniker": "Application\\Use Case\\CategoryCase.cs",
@@ -226,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "StudentCase.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\StudentCase.cs",
               "RelativeDocumentMoniker": "Application\\Use Case\\StudentCase.cs",
@@ -238,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\appsettings.json",
               "RelativeDocumentMoniker": "Shop\\appsettings.json",
@@ -250,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "RefreshTokenRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\AuthDto\\RefreshTokenRequestDto.cs",
               "RelativeDocumentMoniker": "Application\\AuthDto\\RefreshTokenRequestDto.cs",
@@ -262,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PerfumAPI.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Controllers\\PerfumAPI.cs",
               "RelativeDocumentMoniker": "Shop\\Controllers\\PerfumAPI.cs",
@@ -274,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Shop\\Controllers\\CategoryController.cs",
@@ -292,14 +309,14 @@
               "RelativeDocumentMoniker": "Shop\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Shop\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-13T15:59:33.833Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "PerfumeCase.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\PerfumeCase.cs",
               "RelativeDocumentMoniker": "Application\\Use Case\\PerfumeCase.cs",
@@ -311,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ProductCase.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\ProductCase.cs",
               "RelativeDocumentMoniker": "Application\\Use Case\\ProductCase.cs",
@@ -319,12 +336,11 @@
               "RelativeToolTip": "Application\\Use Case\\ProductCase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAABkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T17:01:18.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T17:01:18.061Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Shop\\Program.cs",
               "RelativeDocumentMoniker": "Shop\\Program.cs",
@@ -332,12 +348,11 @@
               "RelativeToolTip": "Shop\\Program.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAAAC8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T16:43:24.525Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T16:43:24.525Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "Application\\interfaces\\IAuthService.cs",
@@ -349,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "RegistreDto.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\AuthDto\\RegistreDto.cs",
               "RelativeDocumentMoniker": "Application\\AuthDto\\RegistreDto.cs",
@@ -361,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\AuthDto\\LoginDto.cs",
               "RelativeDocumentMoniker": "Application\\AuthDto\\LoginDto.cs",
@@ -373,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "AuthResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\AuthDto\\AuthResponseDto.cs",
               "RelativeDocumentMoniker": "Application\\AuthDto\\AuthResponseDto.cs",
@@ -385,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "StudentRepository.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\StudentRepository.cs",
               "RelativeDocumentMoniker": "Infostructure\\Repository\\StudentRepository.cs",
@@ -397,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "PerfumeRepository.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\PerfumeRepository.cs",
               "RelativeDocumentMoniker": "Infostructure\\Repository\\PerfumeRepository.cs",
@@ -409,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "ICategory.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\ICategory.cs",
               "RelativeDocumentMoniker": "Domain\\IReposotory\\ICategory.cs",
@@ -421,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "IStudentRepository.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\IStudentRepository.cs",
               "RelativeDocumentMoniker": "Domain\\IReposotory\\IStudentRepository.cs",
@@ -433,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "IReposotoryPerfume.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\IReposotoryPerfume.cs",
               "RelativeDocumentMoniker": "Domain\\IReposotory\\IReposotoryPerfume.cs",
@@ -445,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "IRepository.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\IRepository.cs",
               "RelativeDocumentMoniker": "Domain\\IReposotory\\IRepository.cs",
@@ -457,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "JwtOptions.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\JwtOptions.cs",
               "RelativeDocumentMoniker": "Infostructure\\JwtOptions.cs",
@@ -469,7 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\Entities\\User.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
@@ -481,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "IjwtService.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\interfaces\\IjwtService.cs",
               "RelativeDocumentMoniker": "Application\\interfaces\\IjwtService.cs",
@@ -493,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\Use Case\\AuthService.cs",
               "RelativeDocumentMoniker": "Application\\Use Case\\AuthService.cs",
@@ -501,12 +516,11 @@
               "RelativeToolTip": "Application\\Use Case\\AuthService.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAwwEsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T14:51:36.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-12T14:51:36.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\UserRepository.cs",
               "RelativeDocumentMoniker": "Infostructure\\Repository\\UserRepository.cs",
@@ -518,7 +532,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "JwtService.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\JwtService.cs",
               "RelativeDocumentMoniker": "Infostructure\\JwtService.cs",
@@ -530,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\ProductRepository.cs",
               "RelativeDocumentMoniker": "Infostructure\\Repository\\ProductRepository.cs",
@@ -542,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Repository.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\Repository\\Repository.cs",
               "RelativeDocumentMoniker": "Infostructure\\Repository\\Repository.cs",
@@ -554,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Domain\\IReposotory\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Domain\\IReposotory\\IUserRepository.cs",
@@ -566,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Infostructure\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "Infostructure\\PasswordHasher.cs",
@@ -578,7 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "IPasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\\u0434\u0438\u043B\u043E\u0432\u0430\u0440\\Desktop\\Shop\\Application\\interfaces\\IPasswordHasher.cs",
               "RelativeDocumentMoniker": "Application\\interfaces\\IPasswordHasher.cs",

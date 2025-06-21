@@ -31,7 +31,7 @@ namespace Shop.Controllers
             }
             if(registreDto.Email == string.Empty || registreDto.Password == string.Empty || registreDto is null)
             {
-                return BadRequest("Неверно офрмленный запрос");
+                return StatusCode(422 ,"Неверно офрмленный запрос");
             }
 
             return Ok(response);
