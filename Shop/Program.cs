@@ -22,7 +22,7 @@ var jwtIssuer =  builder.Configuration["JwtOptions:Issuer"];
 
 var jwtAudience =  builder.Configuration["JwtOptions:Audience"];
 
-var ExpTime = builder.Configuration.GetValue<int>("JwtOptions:ExpirationMinutes", 60);
+var ExpTime = builder.Configuration.GetValue<int>("JwtOptions:ExpirationMinutes", 10);
 
 
 

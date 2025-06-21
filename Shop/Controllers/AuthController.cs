@@ -21,9 +21,18 @@ namespace Shop.Controllers
 
         [HttpPost("register")]
 
-        public async Task<ActionResult> Register(RegistreDto registreDto)
+        public async Task<ActionResult> Register([FromBody]RegistreDto registreDto)
         {
             var response = await _authService.Register(registreDto);
+
+            if (response is null)
+            {
+                return StatusCode(409 , "Пользователь Существует");
+            }
+            if(registreDto.Email == string.Empty || registreDto.Password == string.Empty || registreDto is null)
+            {
+                return BadRequest("Неверно офрмленный запрос");
+            }
 
             return Ok(response);
         }
@@ -33,6 +42,11 @@ namespace Shop.Controllers
         public async Task<ActionResult> login(LoginDto loginDto)
         {
             var response = await _authService.Login(loginDto);
+
+            if(response == null)
+            {
+                return Unauthorized("Неверный логин или пароль");
+            }
 
             return Ok(response);
         }
@@ -45,7 +59,7 @@ namespace Shop.Controllers
 
             if (result == null || request.RefreshToken == null)
             {
-                return Unauthorized("Неверный  Токен");
+                return Unauthorized("Неверный  Токен Обновления");
             }
 
             return Ok(result);  

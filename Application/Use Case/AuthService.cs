@@ -69,9 +69,11 @@ namespace Application.Use_Case
         {
             if (await _userRepository.IsUserExists(registerDto.Username , registerDto.Email))
             {
-                throw new ApplicationException("Пользователь уже существует");
+                
+                return null;    
             }
-               
+            
+            
 
             var hashedPassword = _passwordHasher.Generate(registerDto.Password);
 

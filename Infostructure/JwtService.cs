@@ -72,9 +72,13 @@ namespace Infostructure
             var signingCredentials = new SigningCredentials(new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_options.SecretKey)), SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-               claims: claims,
-               signingCredentials: signingCredentials);
-
+                       issuer: _options.Issuer,            
+                       audience: _options.Audience,         
+                       claims: claims,
+                       expires: DateTime.UtcNow.AddMinutes(_options.ExpirationMinutes),
+                       signingCredentials: signingCredentials
+    );
+            
             var tokenValue = new JwtSecurityTokenHandler().WriteToken(token);
 
             return tokenValue;
