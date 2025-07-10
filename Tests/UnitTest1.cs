@@ -31,14 +31,14 @@ public class UnitTest1
         var cart = new Cart
         {
             UserId = userId,
-            Items = new List<CartItem>() // пустая корзина
+            Items = new List<CartItem>() 
         };
 
         var mockCartRepo = new Mock<ICart>();
         mockCartRepo.Setup(r => r.GetCartByUserId(userId)).ReturnsAsync(cart);
         mockCartRepo.Setup(r => r.SaveChanges()).Returns(Task.CompletedTask);
 
-        var cartService = new CartCase(mockCartRepo.Object); // сервис, который содержит метод AddItemInCart
+        var cartService = new CartCase(mockCartRepo.Object); // Г±ГҐГ°ГўГЁГ±, ГЄГ®ГІГ®Г°Г»Г© Г±Г®Г¤ГҐГ°Г¦ГЁГІ Г¬ГҐГІГ®Г¤ AddItemInCart
 
         // Act
         var result = await cartService.addItemInCart(userId, newItem);
