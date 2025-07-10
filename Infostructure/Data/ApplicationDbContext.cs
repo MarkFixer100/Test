@@ -11,14 +11,10 @@ namespace Infostructure.Data
         }
 
         public DbSet<Product> Products { get; set; }
-
         public DbSet<Category> Categories { get; set; }
-        public DbSet<Perfume> Perfumes { get; set; }
-
+        public DbSet<Cart> Cart { get; set; }
         public DbSet<Student> Students { get; set; }
-
         public DbSet<Course> Courses { get; set; }
-
         public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

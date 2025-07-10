@@ -13,5 +13,6 @@ namespace Application.AuthDto
 
         public string? RefreshToken { get; set; }
 
+        public Guid UserId { get; set; }
     }
 }

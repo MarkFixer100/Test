@@ -31,7 +31,7 @@ namespace Application.Use_Case
 
             if (user == null || !_passwordHasher.VerifyPassword(loginDto.Password, user.Password))
             {
-                throw new UnauthorizedAccessException("Неверный логин или пароль");
+                return null;
             }
 
             var accessToken = _jwtService.GenerateToken(user);
@@ -41,7 +41,8 @@ namespace Application.Use_Case
             return new AuthResponseDto
             {
                 Token = accessToken,
-                RefreshToken = refreshToken
+                RefreshToken = refreshToken,
+                UserId = user.Id,
             };
         }
 
@@ -60,6 +61,7 @@ namespace Application.Use_Case
 
             return new AuthResponseDto
             {
+                UserId = user.Id,
                 Token = accessToken,
                 RefreshToken = refreshToken
             };
@@ -94,7 +96,6 @@ namespace Application.Use_Case
 
                 RefreshTokenExpirytime = DateTime.UtcNow.AddDays(7)
 
-
             };
 
 
@@ -102,7 +103,9 @@ namespace Application.Use_Case
 
             await _userRepository.AddUser(user);
 
-            return new AuthResponseDto {Token = token , RefreshToken = refreshToken};
+            return new AuthResponseDto {Token = token,
+                                       RefreshToken = refreshToken ,
+                                       UserId = user.Id};
 
 
         }

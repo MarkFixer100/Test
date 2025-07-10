@@ -17,15 +17,20 @@ namespace Infostructure.Repository
 
         public async Task AddUser(User user)
         {
-            await _db.Users.AddAsync(user);
+              
+          
+                await _db.Users.AddAsync(user);
 
-            await _db.SaveChangesAsync();
+                await _db.SaveChangesAsync();
+            
+         
         }
 
         public async Task<User> GetUserByEmail(string email)
         {
-            return await _db.Users.AsNoTracking()
-                                 .FirstOrDefaultAsync(u => u.Email == email) ?? throw new Exception();
+           
+              return await _db.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Email == email);
+        
         }
 
         public async Task<bool> IsUserExists(string username , string email)

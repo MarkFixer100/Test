@@ -37,7 +37,9 @@ namespace Infostructure.Repository
                 query = query.Where(filter);
             }
 
-            return await query.FirstOrDefaultAsync();
+            var result = await query.FirstOrDefaultAsync();
+
+            return result;
         }
 
         public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>>? filter = null)

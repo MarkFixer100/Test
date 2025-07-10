@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Application.Dto;
 using Application.StudentDTOS;
 using Domain.Entities;
 using System;
@@ -16,13 +15,6 @@ namespace Application
     public class MappingProfile:Profile 
     {
         public MappingProfile() {
-
-            CreateMap<Perfume, PerfumeDTO>();
-            CreateMap<PerfumeDTO, Perfume>();
-
-            CreateMap<Perfume, CreatePerfumeDTO>().ReverseMap();
-
-            CreateMap<Perfume , UpdatePerfumeDTO>().ReverseMap();
 
              CreateMap<Student, StudentDTO>();
 

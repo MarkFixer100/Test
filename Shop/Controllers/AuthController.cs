@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Newtonsoft.Json.Serialization;
+using System.Runtime.CompilerServices;
 
 namespace Shop.Controllers
 {
@@ -29,7 +30,7 @@ namespace Shop.Controllers
             {
                 return StatusCode(409 , "Пользователь Существует");
             }
-            if(registreDto.Email == string.Empty || registreDto.Password == string.Empty || registreDto is null)
+            if(registreDto.Email == string.Empty || registreDto.Password == string.Empty || registreDto.Username == string.Empty || registreDto is null)
             {
                 return StatusCode(422 ,"Неверно офрмленный запрос");
             }
@@ -39,21 +40,23 @@ namespace Shop.Controllers
 
         [HttpPost("login")]
 
-        public async Task<ActionResult> login(LoginDto loginDto)
+        public async Task<ActionResult> Login(LoginDto loginDto)
         {
             var response = await _authService.Login(loginDto);
 
             if(response == null)
             {
-                return Unauthorized("Неверный логин или пароль");
+                return Unauthorized();
             }
+
+            
 
             return Ok(response);
         }
 
         [HttpPost("refresh-token")]
 
-        public async Task<ActionResult<AuthResponseDto>> RefreshToken(RefreshTokenRequestDto request)
+        public async Task<ActionResult<AuthResponseDto>> RefreshToken([FromBody]RefreshTokenRequestDto request)
         {
             var result = await _authService.RefreshTokenAsync(request);
 
@@ -67,7 +70,7 @@ namespace Shop.Controllers
 
         [Authorize(Roles = "Admin")]
         [HttpGet("admin-only")]
-        public IActionResult adminOnly()
+        public IActionResult AdminOnly()
         {
             return Ok("admin");
         }

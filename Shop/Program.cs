@@ -4,11 +4,14 @@ using Application.Use_Case;
 using Domain.IReposotory;
 using Infostructure;
 using Infostructure.Data;
-using Infostructure.PerfumeRepository;
 using Infostructure.Repository;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Shop.filters;
+using System.Net;
 using System.Text;
+using System.Text.Json;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,8 +31,6 @@ var ExpTime = builder.Configuration.GetValue<int>("JwtOptions:ExpirationMinutes"
 
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
-builder.Services.AddScoped<IReposotoryPerfume , PerfumeRepository>();
-builder.Services.AddScoped<PerfumeCase>();
 builder.Services.AddScoped<IStudentRepository , StudentRepository>();
 builder.Services.AddScoped<StudentCase>();
 builder.Services.AddScoped<IProducts , ProductRepository>();
@@ -37,6 +38,7 @@ builder.Services.AddScoped<ProductCase>();
 builder.Services.AddScoped<ICategory, CategoryRepository>();
 builder.Services.AddScoped<CategoryCase>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<GetUser>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 builder.Services.AddScoped<IJwtService, JwtService>();
@@ -59,11 +61,12 @@ builder.Services.AddAuthentication("Bearer").AddJwtBearer("Bearer", options =>
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = jwtIssuer,           // Add this
-        ValidAudience = jwtAudience,       // Add this
+        ValidIssuer = jwtIssuer,           
+        ValidAudience = jwtAudience,       
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtOptions.SecretKey))
     };
 
+ 
 });
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
@@ -96,6 +99,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseCors();
+app.UseMiddleware<JwtStatusCodeMiddleware>();
 app.UseAuthentication();
 app.UseAuthorization();
 

@@ -11,9 +11,9 @@ namespace Domain.Entities
     {
         public Guid Id { get; set; }
 
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
-        public string Type { get; set; }
+        public string? Type { get; set; }
 
         public decimal PricePerKg { get; set; }
 
@@ -23,7 +23,7 @@ namespace Domain.Entities
 
         public DateTime ExpirationDate { get; set; }
 
-        public string StorageCondition { get; set; }
+        public string? StorageCondition { get; set; }
 
         public bool IsAvailable { get; set; }
 
@@ -31,6 +31,6 @@ namespace Domain.Entities
 
 
         [ForeignKey("CategoryId")]
-        public Category Category { get; set; } 
+        public Category? Category { get; set; } 
     }
 }
