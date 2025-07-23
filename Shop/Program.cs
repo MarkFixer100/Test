@@ -31,12 +31,15 @@ var ExpTime = builder.Configuration.GetValue<int>("JwtOptions:ExpirationMinutes"
 
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
-builder.Services.AddScoped<IStudentRepository , StudentRepository>();
-builder.Services.AddScoped<StudentCase>();
 builder.Services.AddScoped<IProducts , ProductRepository>();
 builder.Services.AddScoped<ProductCase>();
 builder.Services.AddScoped<ICategory, CategoryRepository>();
 builder.Services.AddScoped<CategoryCase>();
+builder.Services.AddScoped<ICartItem, CartItemRepository>();
+builder.Services.AddScoped<ICart,CartRepository>();
+builder.Services.AddScoped<CartCase>();
+builder.Services.AddScoped<IOrder , OrderRepository>();
+builder.Services.AddScoped<OrderCase>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<GetUser>();
 builder.Services.AddScoped<IAuthService, AuthService>();

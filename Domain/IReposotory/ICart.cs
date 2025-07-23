@@ -11,8 +11,7 @@ namespace Domain.IReposotory
     {
         Task Create(Cart entity);
         Task<Cart> GetCartByUserId(Guid id);
-        void RemoveCartItem(CartItem cartItem, Cart cart);
-        void AddCartItem (CartItem cartItem , Cart cart);
+      //  void RemoveCartItem(CartItem existingItem, Cart cart);
         Task SaveChanges();
     }
 }

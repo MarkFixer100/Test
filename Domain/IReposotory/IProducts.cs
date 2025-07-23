@@ -12,5 +12,7 @@ namespace Domain.IReposotory
         Task<Product> UpdateAsync(Product entity);
 
         Task<List<Product>> GetProductsByCategoryAsync(Guid categoryId);
+
+        Task<PaginatedList<Product>> GetPaginatedSlice(int pageIndex, int pageSize);
     }
 }

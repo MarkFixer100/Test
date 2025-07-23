@@ -13,24 +13,45 @@ namespace Infostructure.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Cart> Cart { get; set; }
-        public DbSet<Student> Students { get; set; }
-        public DbSet<Course> Courses { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
+        public DbSet<Order> Order { get; set; }
+
+        public DbSet<OrderItem> OrderItems { get; set; }
+       
         public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-           modelBuilder.Entity<Course>().HasKey(c => c.Id);
+        
 
-           modelBuilder.Entity<Student>().HasKey(s => s.Id);
+    
 
-            modelBuilder.ApplyConfiguration(new Config());
+            
 
-            modelBuilder.Entity<Course>()
-    .HasMany(c => c.Students)
-    .WithOne(s => s.Course)     
-    .HasForeignKey(s => s.CourseId);
+    
 
+
+            modelBuilder.Entity<User>()
+    .HasOne(u => u.Cart)
+    .WithOne(c => c.User)
+    .HasForeignKey<Cart>(c => c.Id) 
+    .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Order>()
+    .HasOne(o => o.User)
+    .WithMany(u => u.Orders)
+    .HasForeignKey(o => o.UserId)
+    .OnDelete(DeleteBehavior.Cascade);
+
+ 
+
+            modelBuilder.Entity<Cart>()
+       .HasMany(o => o.Items)
+       .WithOne(o => o.Cart)
+       .HasForeignKey(o => o.CartId)
+       ;
+       
 
             var category1Id = new Guid("11111111-1111-1111-1111-111111111111");
             var category2Id = new Guid("22222222-2222-2222-2222-222222222222");

@@ -4,6 +4,7 @@ using Infostructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Infostructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250714122127_TEST4")]
+    partial class TEST4
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,7 +56,7 @@ namespace Infostructure.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("CartItems");
+                    b.ToTable("CartItem");
                 });
 
             modelBuilder.Entity("Domain.Entities.Category", b =>
@@ -80,6 +83,45 @@ namespace Infostructure.Migrations
                         {
                             Id = new Guid("22222222-2222-2222-2222-222222222222"),
                             Name = "Категория 2"
+                        });
+                });
+
+            modelBuilder.Entity("Domain.Entities.Course", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("Created")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("Updated")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Courses");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("d290f1ee-6c54-4b01-90e6-d701748f0851"),
+                            Created = new DateTime(2025, 2, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Разработка дизайна",
+                            Name = "Web Design",
+                            Price = 5000m,
+                            Updated = new DateTime(2025, 2, 23, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 
@@ -144,7 +186,7 @@ namespace Infostructure.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderItems");
+                    b.ToTable("OrderItem");
                 });
 
             modelBuilder.Entity("Domain.Entities.Product", b =>
@@ -200,6 +242,42 @@ namespace Infostructure.Migrations
                             Type = "Тип 1",
                             Weight = 1.5
                         });
+                });
+
+            modelBuilder.Entity("Domain.Entities.Student", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CourseId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("Distancelearning")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsPaid")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.ToTable("Students");
                 });
 
             modelBuilder.Entity("Domain.Entities.User", b =>
@@ -306,6 +384,17 @@ namespace Infostructure.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("Domain.Entities.Student", b =>
+                {
+                    b.HasOne("Domain.Entities.Course", "Course")
+                        .WithMany("Students")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+                });
+
             modelBuilder.Entity("Domain.Entities.Cart", b =>
                 {
                     b.Navigation("Items");
@@ -314,6 +403,11 @@ namespace Infostructure.Migrations
             modelBuilder.Entity("Domain.Entities.Category", b =>
                 {
                     b.Navigation("products");
+                });
+
+            modelBuilder.Entity("Domain.Entities.Course", b =>
+                {
+                    b.Navigation("Students");
                 });
 
             modelBuilder.Entity("Domain.Entities.Order", b =>

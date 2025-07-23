@@ -48,9 +48,13 @@ namespace Application.Use_Case
             return _mapper.Map<ProductDtos>(product);
         }
 
+         public async Task<PaginatedList<Product>> getPaginatedSlice(int pageIndex , int pageSize)
+        {
+            
+            var products = await _productRepository.GetPaginatedSlice(pageIndex, pageSize);
 
-
-
+            return products;
+        }
 
         public async Task<ProductDtos> CreateProductAsync(CreateProductDto modelDto)
         {

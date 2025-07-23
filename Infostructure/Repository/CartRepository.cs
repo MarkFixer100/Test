@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Application.CartDto;
+using Domain.Entities;
 using Domain.IReposotory;
 using Infostructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -19,17 +20,13 @@ namespace Infostructure.Repository
             _db = db;
         }
 
-        public void AddCartItem(CartItem cartItem, Cart cart)
-        {
-            cart.Items.Add(cartItem);
-        }
 
 
         public async Task Create(Cart entity)
         {
                _db.Cart.Add(entity);
 
-            await _db.SaveChangesAsync();
+            await SaveChanges();    
 
         }
 
@@ -37,20 +34,16 @@ namespace Infostructure.Repository
         {
             var cart = await _db.Cart.Include(i => i.Items)
                 .ThenInclude(item => item.Product)
-                .FirstOrDefaultAsync(x => x.UserId == id);
+                .FirstOrDefaultAsync(x => x.Id == id);
 
                 return cart;
-        }
+         }
 
 
    
 
        
-        public  void RemoveCartItem(CartItem cartItem, Cart cart)
-        {
-            
-            cart.Items.Remove(cartItem);
-        }
+       
 
         public async Task SaveChanges()
         {

@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Application.StudentDTOS;
+
 using Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Application.CategoryDto;
 using Application.ProductDto;
+using Application.CartDto;
 
 
 namespace Application
@@ -16,13 +17,7 @@ namespace Application
     {
         public MappingProfile() {
 
-             CreateMap<Student, StudentDTO>();
-
-            CreateMap<StudentDTO, Student>();
-
-            CreateMap<Student, CreateStudentDTO>().ReverseMap();
-
-            CreateMap<Student , UpdateStudentDTO>().ReverseMap();
+         
 
             CreateMap<Product, ProductDtos>();
 
@@ -42,7 +37,10 @@ namespace Application
             CreateMap<CategoryDtos, Category>();
 
 
+            CreateMap<Cart, getCartDto>();
 
+            CreateMap<CartItem, CartItemDto>();
+            CreateMap<CartItemDto, CartItem>();
         }
     }
 }

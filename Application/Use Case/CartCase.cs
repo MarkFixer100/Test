@@ -1,4 +1,7 @@
-﻿using Domain.Entities;
+﻿using Application.CartDto;
+using Application.ProductDto;
+using AutoMapper;
+using Domain.Entities;
 using Domain.IReposotory;
 using System;
 using System.Collections.Generic;
@@ -12,25 +15,57 @@ namespace Application.Use_Case
     {
         private readonly ICart _cartRepository;
 
-        public CartCase(ICart cartRepository)
+        private readonly IMapper _mapper;
+
+        private readonly IProducts _productRepository;
+
+        private readonly ICartItem _cartItemsReposirory;
+
+        public CartCase(ICart cartRepository, IMapper mapper, IProducts productRepository, ICartItem cartItemsReposirory) 
         {
             _cartRepository = cartRepository;
+
+            _mapper = mapper;
+            _productRepository = productRepository;
+            _cartItemsReposirory = cartItemsReposirory;
+          
         }
 
-        public async Task<CartItem> addItemInCart(Guid userId , CartItem cartItem)
+        public async Task<ResponseItemDto> addItemInCart(Guid userId, ResponseItemDto cartItem)
         {
             Cart cart = await _cartRepository.GetCartByUserId(userId);
 
 
+            if(cart == null)
+            {
+                return new ResponseItemDto { };
+            }
             var productInCartitem = cart.Items.FirstOrDefault(p => p.ProductId == cartItem.ProductId);
 
             if (productInCartitem == null)
             {
-                _cartRepository.AddCartItem(cartItem, cart);
+                var product = await _productRepository.GetAsync(o => o.Id == cartItem.ProductId);
 
-               await _cartRepository.SaveChanges();
+                var newCartItem = new CartItem
+                {
+                    Id = Guid.NewGuid(),
 
-                return cartItem;
+                    ProductId = cartItem.ProductId,
+
+                    Product = product,
+
+                    Cart = cart,
+
+                    CartId = cart.Id,
+                   
+                    Quantity = cartItem.Quantity > 0 ? cartItem.Quantity : 1,
+
+                };
+
+             
+                await _cartItemsReposirory.Add(newCartItem);
+          
+                return new ResponseItemDto { ProductId = newCartItem.ProductId ,CartId = newCartItem.CartId };
             }
 
 
@@ -39,11 +74,11 @@ namespace Application.Use_Case
 
              await _cartRepository.SaveChanges();
 
-            return productInCartitem;
+            return  new ResponseItemDto { ProductId = productInCartitem.ProductId, CartId = productInCartitem.CartId };
 
         }
 
-        public async Task<CartItem?> removeItemInCart(Guid userId, CartItem cartItem)
+        public async Task<ResponseItemDto?> removeItemInCart(Guid userId, ResponseItemDto cartItem)
         {
             var cart = await _cartRepository.GetCartByUserId(userId);
 
@@ -52,23 +87,86 @@ namespace Application.Use_Case
             {
                 return null;
             }
-             
+             if(existingItem.Quantity > 1)
+            {
+                existingItem.Quantity--;
 
-            _cartRepository.RemoveCartItem(existingItem, cart);
-            await _cartRepository.SaveChanges();
+                await _cartRepository.SaveChanges();
 
-            return existingItem;
+                return new ResponseItemDto
+                {
+                    CartId = existingItem.Id,
+                    ProductId = cartItem.ProductId,
+                    Quantity = existingItem.Quantity,
+                };
+            }
+             await _cartItemsReposirory.remove(existingItem);
+         
+
+            return new ResponseItemDto
+            {
+                CartId = existingItem.Id,
+                ProductId = cartItem.ProductId,
+                Quantity = existingItem.Quantity,
+            };
+
         }
 
 
-        public async Task<Cart> getCartByUserId(Guid userId)
+        public async Task<getCartDto> getCartByUserId(Guid userId)
         {
             var cart = await _cartRepository.GetCartByUserId(userId);
+            
+            if(cart is null)
+            {
+                return null;
+            }
 
-            return cart; 
-        
+            List<CartItemDto> cartItems = new List<CartItemDto>();
+
+            foreach (var item in cart.Items)
+            {
+                CartItemDto mapped = new CartItemDto
+                {
+                    CartId = item.CartId,
+                    ProductId = item.ProductId,
+                    Quantity = item.Quantity,
+                    product = new ProductDtos
+                    {
+                        Id = item.Product.Id,
+
+                        Name = item.Product.Name,
+
+                        CategoryId = item.Product.CategoryId,
+
+                        IsAvailable = item.Product.IsAvailable,
+
+                        PricePerKg = item.Product.PricePerKg,
+
+                        StorageCondition = item.Product.StorageCondition,
+
+                        Type= item.Product.Type,
+
+                        Weight = item.Product.Weight,                         
+                    },
+                    
+                };
+
+                cartItems.Add(mapped);                 
+
+            }
+
+            return new getCartDto
+            {
+                Id = cart.Id,
+                Items = cartItems
+            };
+
         }
 
-
+        public async Task<IEnumerable<object>> removeItemInCart(Guid userId, CartItem existingItem)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

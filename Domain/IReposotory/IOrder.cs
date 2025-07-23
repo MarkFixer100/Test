@@ -10,12 +10,11 @@ namespace Domain.IReposotory
 {
     public interface IOrder
     {   
-        public void ChangeStatusOrder(Order order , OrderStatus status);
-
-        public Task<Order> GetOrderById(Guid userId);
-
-        public void ClearCart(Cart cart);
-
+        public Task<List<Order>> GetOrdersByUserId(Guid userId);
+        
+        public Task<Order> GetOrderByUserId(Guid userId);
+        public void Add(Order order);
+        public Task saveChanges();
 
     }
 }

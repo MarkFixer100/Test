@@ -14,15 +14,18 @@ namespace Application.Use_Case
     {
         private readonly IUserRepository _userRepository;
 
+        private readonly ICart _cartRepository;
+
         private readonly IPasswordHasher _passwordHasher;
 
         private readonly IJwtService _jwtService;
 
-       public  AuthService(IUserRepository userRepository, IPasswordHasher passwordHasher , IJwtService jwtService)
+       public  AuthService(IUserRepository userRepository, IPasswordHasher passwordHasher , IJwtService jwtService , ICart cartRepository)
         {
             _userRepository = userRepository;
             _passwordHasher = passwordHasher;
             _jwtService = jwtService;
+            _cartRepository = cartRepository;
         }
 
         public async Task<AuthResponseDto> Login(LoginDto loginDto)
@@ -82,10 +85,12 @@ namespace Application.Use_Case
            
 
             var refreshToken = _jwtService.GenerateRefreshToken();
-          
+
 
             var user = new User
             {
+                Id = Guid.NewGuid(),
+
                 UserName = registerDto.Username,
 
                 Email = registerDto.Email,
@@ -95,13 +100,24 @@ namespace Application.Use_Case
                 RefreshToken = refreshToken,
 
                 RefreshTokenExpirytime = DateTime.UtcNow.AddDays(7)
+                
+                
+            };
 
+            var cart = new Cart
+            {
+                Id = user.Id,
+
+                User = user
+                
             };
 
 
             var token = _jwtService.GenerateToken(user);
 
             await _userRepository.AddUser(user);
+
+            await _cartRepository.Create(cart);
 
             return new AuthResponseDto {Token = token,
                                        RefreshToken = refreshToken ,

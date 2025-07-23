@@ -1,5 +1,6 @@
 ﻿using Application.ProductDto;
 using Application.Use_Case;
+using Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,6 +27,15 @@ namespace Shop.Controllers
 
         }
 
+        [HttpGet("GetPaginated")]
+
+        public async Task<PaginatedList<Product>> GetPaginatedSlice(int pageIndex , int pageSize)
+        {
+            var products = await _productUseCase.getPaginatedSlice(pageIndex, pageSize);
+
+            return products;
+        }
+
         [HttpGet ("{idProduct:Guid},")]
 
         public async Task<ActionResult<ProductDtos>> GetById(Guid id)
@@ -39,7 +49,7 @@ namespace Shop.Controllers
 
         [HttpGet ( "{idCategory:Guid}")]
 
-        public async Task <ActionResult<List<ProductDtos>>> getByCategory(Guid categoryId)
+        public async Task <ActionResult<List<ProductDtos>>> GetByCategory(Guid categoryId)
         {
             var products = await _productUseCase.getProductsByCategory(categoryId);
 

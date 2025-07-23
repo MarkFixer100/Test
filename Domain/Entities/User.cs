@@ -17,13 +17,7 @@ namespace Domain.Entities
         public string Password { get; set; } = string.Empty;
         public string Role { get; set; } = Domain.Enum.Role.User;
         public string? RefreshToken { get; set; }
-        public Guid CartId { get; set; }
-
-        [ForeignKey("CartId")]
         public Cart? Cart { get; set; }
-        public Guid OrderId { get; set; }
-
-        [ForeignKey("OrderId")]
         public List<Order>? Orders { get; set; }
         public DateTime? RefreshTokenExpirytime { get; set; }
     }
