@@ -2,11 +2,7 @@
 using AutoMapper;
 using Domain.Entities;
 using Domain.IReposotory;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Application.Use_Case
 {
@@ -29,6 +25,12 @@ namespace Application.Use_Case
             return _mapper.Map<IEnumerable<ProductDtos>>(products);
         }
 
+        public  async Task<IEnumerable<Product>> getByQuery(string nameFilter, decimal? byPrice)
+        {
+            var product =  _productRepository.BuildQuery(nameFilter, byPrice);
+
+            return  product;
+        }
         public async Task<ProductDtos> getById(Guid id)
         {
             if (id == Guid.Empty)
@@ -77,6 +79,8 @@ namespace Application.Use_Case
             await _productRepository.Remove(product);
 
             await _productRepository.SaveAsync();
+
+            
         }
 
         public async Task<List<ProductDtos>> getProductsByCategory(Guid categoryId)

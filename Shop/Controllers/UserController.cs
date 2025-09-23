@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Shop.Controllers
 {
-    [Authorize]
+
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
@@ -17,9 +17,9 @@ namespace Shop.Controllers
             _userService = userService;
         }
 
-        [HttpGet]
+        [HttpGet("{userId:guid}")]
 
-        public async Task<ActionResult<UserDto>> GetUserById( Guid userId)
+        public async Task<ActionResult<UserDto>> GetUserById(Guid userId)
         {
             var user = await _userService.GetUserById(userId);
 

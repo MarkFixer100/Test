@@ -14,5 +14,7 @@ namespace Domain.IReposotory
         Task<List<Product>> GetProductsByCategoryAsync(Guid categoryId);
 
         Task<PaginatedList<Product>> GetPaginatedSlice(int pageIndex, int pageSize);
+
+        public IQueryable<Product> BuildQuery(string nameFilter, decimal? byPrice);
     }
 }

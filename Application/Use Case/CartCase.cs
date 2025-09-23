@@ -3,11 +3,7 @@ using Application.ProductDto;
 using AutoMapper;
 using Domain.Entities;
 using Domain.IReposotory;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json;
 
 namespace Application.Use_Case
 {
@@ -21,24 +17,25 @@ namespace Application.Use_Case
 
         private readonly ICartItem _cartItemsReposirory;
 
-        public CartCase(ICart cartRepository, IMapper mapper, IProducts productRepository, ICartItem cartItemsReposirory) 
+        private readonly ICacheService _cache;
+
+        public CartCase(ICart cartRepository, IMapper mapper, IProducts productRepository, ICartItem cartItemsReposirory, ICacheService cache)
         {
             _cartRepository = cartRepository;
 
             _mapper = mapper;
             _productRepository = productRepository;
             _cartItemsReposirory = cartItemsReposirory;
-          
+            _cache = cache;
         }
 
         public async Task<ResponseItemDto> addItemInCart(Guid userId, ResponseItemDto cartItem)
         {
             Cart cart = await _cartRepository.GetCartByUserId(userId);
 
-
             if(cart == null)
             {
-                return new ResponseItemDto { };
+                return null;
             }
             var productInCartitem = cart.Items.FirstOrDefault(p => p.ProductId == cartItem.ProductId);
 
@@ -62,10 +59,11 @@ namespace Application.Use_Case
 
                 };
 
+                
              
                 await _cartItemsReposirory.Add(newCartItem);
           
-                return new ResponseItemDto { ProductId = newCartItem.ProductId ,CartId = newCartItem.CartId };
+                return new ResponseItemDto { ProductId = newCartItem.ProductId ,CartId = newCartItem.CartId , };
             }
 
 
@@ -115,9 +113,19 @@ namespace Application.Use_Case
 
         public async Task<getCartDto> getCartByUserId(Guid userId)
         {
+
+            var cacheKey = $"cart:{userId}";
+
+            var cachedCart = await _cache.GetAsync<Cart>(cacheKey);
+
+           
+
+            if (cachedCart != null) return JsonSerializer.Deserialize<getCartDto>(cachedCart);
+
+
             var cart = await _cartRepository.GetCartByUserId(userId);
-            
-            if(cart is null)
+
+            if (cart is null)
             {
                 return null;
             }
@@ -156,12 +164,18 @@ namespace Application.Use_Case
 
             }
 
-            return new getCartDto
-            {
-                Id = cart.Id,
-                Items = cartItems
-            };
+              var dtoCart = new getCartDto
+                                         {
+                              Id = cart.Id,
+                             Items = cartItems,
+                             TotalPrice = cart.GetTotalPrice(),
+ 
+                                          };
 
+
+            await _cache.SetAsync(cacheKey, dtoCart, TimeSpan.FromHours(24));
+
+            return dtoCart;
         }
 
         public async Task<IEnumerable<object>> removeItemInCart(Guid userId, CartItem existingItem)

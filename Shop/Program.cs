@@ -27,12 +27,12 @@ var jwtAudience =  builder.Configuration["JwtOptions:Audience"];
 
 var ExpTime = builder.Configuration.GetValue<int>("JwtOptions:ExpirationMinutes", 10);
 
-
-
+builder.Services.AddDistributedMemoryCache();
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<IProducts , ProductRepository>();
 builder.Services.AddScoped<ProductCase>();
+builder.Services.AddSingleton<ICacheService , RedisCacheService>();
 builder.Services.AddScoped<ICategory, CategoryRepository>();
 builder.Services.AddScoped<CategoryCase>();
 builder.Services.AddScoped<ICartItem, CartItemRepository>();

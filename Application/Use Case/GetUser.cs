@@ -22,7 +22,7 @@ namespace Application.Use_Case
         {
             User user = await _userRepository.GetAsync(u => u.Id == userId);
 
-            if (user is null)
+            if (user == null)
             {
                 return null;
             }

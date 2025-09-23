@@ -1,12 +1,9 @@
-﻿using Domain.Entities;
+﻿
+using Domain.Entities;
 using Domain.IReposotory;
 using Infostructure.Data;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Infostructure.Repository
 {
@@ -50,5 +47,20 @@ namespace Infostructure.Repository
             await _db.SaveChangesAsync();  
             return product;
         }
+
+        public  IQueryable<Product> BuildQuery(string nameFilter, decimal? byPrice)
+        {
+            IQueryable<Product> query = _db.Products;
+
+            if (!string.IsNullOrEmpty(nameFilter))
+                query = query.Where(u => u.Name.Contains(nameFilter) || u.Type.Contains(nameFilter));
+
+            if (byPrice.HasValue)
+                query = query.Where(u => u.PricePerKg <= byPrice.Value);
+
+            
+            return  query;
+        }
+
     }
 }

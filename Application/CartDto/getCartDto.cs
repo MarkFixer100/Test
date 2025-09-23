@@ -11,5 +11,7 @@ namespace Application.CartDto
     {
         public Guid Id { get; set; }
         public List<CartItemDto> Items { get; set; }
+
+        public decimal TotalPrice { get; set; }
     }
 }

@@ -48,6 +48,8 @@ namespace Shop.Controllers
 
             var cartItem = await _cartCase.addItemInCart(userId, item);
 
+            if (cartItem == null) return BadRequest(); 
+
             return NoContent();  
         }
 
